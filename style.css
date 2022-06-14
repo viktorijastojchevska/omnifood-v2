@@ -1,0 +1,416 @@
+
+/**** SECTION HERO*****/
+
+.section-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("images/hero.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.logo {
+    height: 10rem;
+    width: 10rem;
+}
+.logo img {
+    width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.8rem;
+}
+.main-nav-list {
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+}
+.main-nav-list a:link,
+.main-nav-list a:visited {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+    padding-bottom: 0.7rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+.main-nav-list a:hover,
+.main-nav-list a:visited {
+    border-bottom: 2px solid #e67e22;
+}
+.hero-text-box {
+    top: 40%;
+    display: grid;
+    justify-content: start;
+    transform: translate(0, 150%);
+}
+.buttons {
+    display: flex;
+    gap: 3.2rem;
+    margin-top: 2.4rem;
+}
+.feature-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*** FEATURES ***/
+
+.feature-text {
+    word-spacing: 2px;
+    line-height: 1.2;
+}
+
+.features {
+    display: flex;
+    gap: 4.8rem;
+    margin: 8rem 0;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.feature-content {
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+/*** MEALS ***/
+
+.meals {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #000;
+}
+figure {
+    overflow: hidden;
+}
+
+.meal-img {
+    max-width: 100%;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: all 0.5s;
+}
+.meal-img:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*** HOW IT WORKS ***/
+
+.section-how {
+    padding-bottom: 9.6rem;
+}
+.how-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+}
+.how-img-box {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.how-img-box img {
+    max-width: 40%;
+    position: absolute;
+    top: 30rem;
+    animation-fill-mode: forwards;
+    animation-name: iphone-img;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+@keyframes iphone-img {
+    0% {
+        position: absolute;
+        top: 30rem;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+    }
+}
+
+.how-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3.2rem;
+    margin-top: 3.2rem;
+    justify-content: center;
+}
+.how-step {
+    display: flex;
+    gap: 3.2rem;
+}
+.number {
+    display: block;
+    width: 8rem;
+    height: 6rem;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    font-size: 3.2rem;
+    color: #e67e22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no-2 {
+    padding: 0 1.2rem;
+}
+.app-btns {
+    display: block;
+    height: 5rem;
+    margin-top: 4.8rem;
+    display: flex;
+}
+.app-btns img {
+    height: 100%;
+    margin: 0 0.8rem;
+}
+
+/*** CITIES ***/
+.section-cities {
+    padding: 4.8rem 0 9.6rem 0;
+    background-color: #fff;
+}
+
+.cities {
+    display: flex;
+    justify-content: space-between;
+    gap: 4.8rem;
+}
+
+.city {
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.city img {
+    max-width: 100%;
+}
+.city div {
+    padding-bottom: 1.2rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+/*** TESTIMONIALS ***/
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(images/back-customers.jpg);
+    background-size: cover;
+    padding: 1.6rem 0 4.8rem 0;
+    color: #fff;
+    background-attachment: fixed;
+}
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    gap: 4.8rem;
+}
+.author-text {
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.author img {
+    max-width: 5rem;border-radius: 50%;
+}
+.author {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    margin-top: 4.8rem;
+}
+blockquote {
+    position: relative;
+}
+
+blockquote::before {
+    content: " \201C ";
+    display: block;
+    position: absolute;
+    font-size: 5em;
+    top: -5rem;
+    left: -1rem;
+}
+
+/*** PRICING ***/
+.section-pricing {
+    padding-bottom: 9.6rem;
+}
+
+.pricing-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6.4rem;
+}
+.pricing-plan {
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0 1rem 1rem #dfdfdf;
+}
+.plan-section {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #dfdfdf;
+}
+.plan-section div {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+}
+.plan-section:first-child {
+    background-color: #fcfcfc;
+}
+.price-month {
+    color: #e67e22;
+    font-size: 3em;
+    font-weight: 100;
+}
+.price-month span {
+    font-size: 2rem;
+}
+
+.pricing-feature {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.pricing-feature li {
+    display: flex;
+    gap: 1.2rem;
+}
+.plan-section:last-child {
+    display: flex;
+    justify-content: center;
+    border-bottom: none;
+}
+
+/*** CONTACT FORM ***/
+.section-form {
+    background-color: #000;
+    max-width: 100%;
+    position: relative
+}
+
+.google-map {
+z-index: -999;
+height: 60rem;
+opacity: 0.6;
+}
+.form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 52rem;
+    top: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.8;
+}
+.section-form .heading-secondary {
+    margin: 3.2rem auto;
+}
+.form figure {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+.form div {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    padding: 0 2.8rem;
+    margin-bottom: 2.4rem;
+}
+.form .btn {
+    justify-self: start;
+}
+input[type=text], input[type=email], select, input[type=checkbox], textarea {
+    padding: 0.5rem;
+    border: 1px solid #999;
+    border-radius: 0.4rem;
+    outline: none;
+
+}
+*:focus {
+    border-radius: 4px;
+    box-shadow: 2px 2px 15px 2px #82c91e;
+}
+
+/*** FOOTER ***/
+footer {
+    background-color: #2d2d2d;
+}
+.section-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+}
+.footer-nav {
+    display: flex;
+    gap: 2.4rem;
+    padding: 4.8rem 0;
+    list-style: none;
+}
+.footer-list {
+    justify-self: flex-start;
+}
+.footer-list a:link,
+.footer-list a:visited,
+.social-list a:link,
+.social-list a:visited {
+    text-decoration: none;
+    color: #999;
+    font-size: 1.6rem;
+}
+.footer-list a:hover,
+.footer-list a:active,
+.social-list a:hover,
+.social-list a:active {
+    color: #efefef;
+}
+.social-list {
+    justify-content: flex-end;
+}
+.social-list a:link,
+.social-list a:visited {
+    font-size: 2.4rem;
+}
+.footer-text {
+    grid-column: -3 / -1;
+    justify-self: center;
+    font-size: 1.6rem;
+    color: #999;
+    padding-bottom: 4.8rem;
+    
+}
+    
+
+
+
+
+
+

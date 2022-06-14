@@ -1,0 +1,155 @@
+/*
+----- 01 TYPOGRAPHY SYSTEM ------
+
+- font size system (px) 10/12/14/16/18/20/24/30/36/44/52/62/74/86/98
+
+- font weights:
+default: 400,  500,  600,  700
+
+- line heights: 
+default:1,   1.05,   1.8
+
+
+----- 02 COLORS ------
+
+- Primary: #e67e22
+- Tints (darker versions):  #cf711f ;
+- Shades (lighter versions):#fdf2e9; 
+- Accents:
+- Greys:  #555; #333; #ddd;#f8f8f8,
+
+------ 03 SHADOWS ---------
+
+------ 04 BORDER RADIUS ---------
+default: 9px
+
+------ 05 WHITE SPACE -----------
+- spacing system(px) 2/4/8/12/16/24/32/48/64/80/96/128
+*/
+
+/***** GENERAL SETUP******/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+text-rendering: optimizeLegibility;
+font-size: 62.5%;
+font-family: Lato;
+font-weight:
+}
+
+body {
+    font-family: Lato;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #555;
+    background-color: #f8f8f8
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+/*******HEADINGS********/
+
+.heading-primary {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 5.2rem;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.heading-secondary {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    font-size: 3.6rem;
+    word-spacing: 2px;
+    margin: 7.2rem auto 4.8rem auto;
+    display: block;
+}
+
+.heading-secondary::after {
+    content: " ";
+    display: block;
+    background-color: #e67e22;
+    max-width: 10rem;
+    height: 0.2rem;
+    margin: 3.2rem auto 0 auto;
+}
+
+.heading-tertiary {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 2.4rem 0;
+    font-size: 2.2rem;
+    
+}
+
+/****** BUTTONS AND LINKS*******/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 0.8rem 2.4rem;
+    border: 1px solid #e67e22;
+    border-radius: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.btn-cta:link,
+.btn-cta:visited {
+    color: #fff;
+    background-color: #e67e22;
+    
+}
+.btn:hover,
+.btn:active {
+    background-color: #cf711f;
+}
+.btn-more:link,
+.btn-more:visited {
+    color: #e67e22;
+}
+
+.btn-more:hover,
+.btn-more:active {
+    color: #fff;
+}
+
+/**** ICONS ****/
+
+.icon-big {
+    color: #e67e22;
+    font-size: 6.4rem;
+    font-weight: 100;
+}
+.icon-small {
+    color: #e67e22;
+}
+span a:link,
+span a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #e67e22;
+    transition: all 0.2s;
+}
+
+span a:hover,
+span a:active {
+    color: #555;
+    border-bottom: 2px solid transparent;
+}
+
